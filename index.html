@@ -18,19 +18,7 @@
         'verticalCentered': false,
         navigation: false,
         controlArrows: false,
-        scrollingSpeed: 2000,
-        loopHorizontal: true,
-        afterLoad: function(anchorLink, index) {
-          var e = e || window.event;
-          idInterval = setInterval(function() {
-            $.fn.fullpage.moveSlideRight();
-          }, 20000);
-          document.onkeydown = function(e) {
-            if (e.keyCode == '37' || e.keyCode == '39') {
-              clearInterval(idInterval);
-            }
-          };
-        }
+        scrollingSpeed: 2000
       });
       $('.pageTitle').teletype({
         text: [
@@ -93,10 +81,16 @@
 
 <body>
   <div id="fullpage">
-    <div class="section" id="section4">
+    <div class="section" id="section5">
       <div class="slide">
         <div class="pageTitle">
         </div>
+        <div class="paper" style="background-image: url(images/5.jpg);">
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section4">
+      <div class="slide">
         <div class="paper" style="background-image: url(images/4.jpg);">
         </div>
       </div>
